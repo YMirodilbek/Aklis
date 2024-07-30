@@ -1,0 +1,264 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+        <!-- Start Main Slider -->
+        <section class="main-slider style1">
+            <div class="slider-box">
+                <!-- Banner Carousel -->
+                <div class="banner-carousel owl-theme owl-carousel">
+                    <!-- Slide -->
+                    <div class="slide">
+                        <div class="slide-shape1">
+                            <img class="float-bob-x" src="{% static 'assets/bubly/slider2.png'%}" alt="">
+                        </div>
+                        <div class="slide-shape2">
+                            <img src="{% static 'assets/images/shape/hand-1.png'%}" alt="">
+                        </div>
+                       
+                        <!-- <div class="slide-shape4">
+                            <img class="zoom-fade" src="{% static 'assets/bubly/Аклис Каталог (2)-1.png'%}" alt="">
+                        </div> -->
+                        <div class="auto-container">
+                            <div class="content">
+                                <div class="big-title">
+                                    <h2>Biz Sizga <br>Musaffo Atmosfer<br> Va Xushboy Xid.</h2>
+                                </div>
+                                <div class="text">
+                                    <p>Taklif Qilamiz .</p>
+                                </div>
+                                <div class="btns-box">
+                                    <a class="btn-one" href="projects.html">
+                                        <span class="txt">View Projects</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide -->
+                    <div class="slide">
+                        <div class="slide-shape1">
+                            <img class="float-bob-x" src="{% static 'assets/rasm/slider.png'%}" alt="">
+                        </div>
+                        <!-- <div class="slide-shape3">
+                            <img class="float-bob-y" src="{% static 'assets/images/shape/hand-2.png'%}" alt="">
+                        </div> -->
+                        <div class="slide-shape4">
+                            <img class="zoom-fade" src="{% static 'assets/images/shape/slide-shape-2.png'%}" alt="">
+                        </div>
+                        <div class="auto-container" >
+                            <div class="content">
+                                <div class="big-title" >
+                                    <h2>Find Your Dream<br> House And Change <br>Your Life.</h2>
+                                </div>
+                                <div class="text">
+                                    <p>Amet consectetur adipisicing elit sed do.</p>
+                                </div>
+                                <div class="btns-box">
+                                    <a class="btn-one" href="contact.html">
+                                        <span class="txt">Contact Us</span>
+
+                                    </a>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+        <!-- End Main Slider -->
+
+
+        
+        <!-- Start Project Style1 Area-->
+        <section class="project-style1-area">
+            <div class="round-shape wow slideInLeft" data-wow-delay="100ms" data-wow-duration="3500ms">
+                <img class="zoom-fade" src="{% static 'assets/images/shape/shape-round.png'%}" alt="">
+            </div>
+            <div class="container">
+                <div class="row text-right-rtl">
+
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="project-top-title">
+                            <div class="sec-title">
+                                <div class="sub-title">
+                                    <p>Bizning Mahsulotlarimiz </p>
+                                </div>
+                                <h2>Recent Projects On<br> Real Estate.</h2>
+                            </div>
+                        </div>
+                        <!--Start Single project Item-->
+                        <div class="single-project-item">
+                            <div class="img-holder">
+                                <div class="inner">
+                                    <img src="{{mah1.rasm.url}}" alt="Awesome Image">
+                                    <div class="zoom-button">
+                                        <a class="lightbox-image" data-fancybox="gallery"
+                                            href="{{mah1.rasm.url}}">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-holder">
+                                <h4><a href="project-details.html">{{mah1.nomi}}</a></h4>
+                                <div class="category">
+                                    <div class="border-box"></div>
+                                    <a href="tel:998993937037"><p>Xarid Qiling</p></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Single project Item-->
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6">
+                        <!--Start Single project Item-->
+                        <div class="single-project-item">
+                            <div class="img-holder">
+                                <div class="inner">
+                                    <img src="{{mah2.rasm.url}}" alt="Awesome Image">
+                                    <div class="zoom-button">
+                                        <a class="lightbox-image" data-fancybox="gallery"
+                                            href="{{mah2.rasm.url}}">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-holder">
+                                <h4><a href="project-details.html">{{mah2.nomi}}</a></h4>
+                                <div class="category">
+                                    <div class="border-box"></div>
+                                    <a href="tel:998993937037"><p>Xarid Qiling</p></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Single project Item-->
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6">
+                        <!--Start Single project Item-->
+                        <div class="single-project-item">
+                            <div class="img-holder">
+                                <div class="inner">
+                                    <img src="{{mah3.rasm.url}}" alt="Awesome Image">
+                                    <div class="zoom-button">
+                                        <a class="lightbox-image" data-fancybox="gallery"
+                                            href="{{mah3.rasm.url}}">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-holder">
+                                <h4><a href="project-details.html">{{mah3.nomi}}</a></h4>
+                                <div class="category">
+                                    <div class="border-box"></div>
+                                    <a href="tel:998993937037"><p>Xarid Qiling</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Single project Item-->
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6">
+                        <!--Start Single project Item-->
+                        <div class="single-project-item">
+                            <div class="img-holder">
+                                <div class="inner">
+                                    <img src="{{mah4.rasm.url}}" alt="Awesome Image">
+                                    <div class="zoom-button">
+                                        <a class="lightbox-image" data-fancybox="gallery"
+                                            href="{{mah4.rasm.url}}">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-holder">
+                                <h4><a href="project-details.html">{{mah4.nomi}}</a></h4>
+                                <div class="category">
+                                    <div class="border-box"></div>
+                                    <a href="tel:998993937037"><p>Xarid Qiling</p></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Single project Item-->
+
+                        
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+       
+        <!--Start Service Style1 Area-->
+        <section class="service-style1-area">
+            <div class="round-shape wow slideInLeft" data-wow-delay="100ms" data-wow-duration="5500ms">
+                <img class="zoom-fade" src="{% static 'assets/rasm/background.avif'%}" alt="">
+            </div>
+            <div class="container">
+                <div class="sec-title text-center">
+                    <div class="sub-title">
+                        <p>Bizning Mahsulotlarimiz </p>
+                    </div>
+                    <h2>We Provide Superb Services.</h2>
+                </div>
+                <div class="row">
+                    <!--Start Single Service Style1-->
+                    {% for i in product %}
+                    <div class="col-xl-3 col-lg-6 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div class="single-service-style1 text-center">
+                            <div class="icon-holder">
+                                <img src="{{i.rasm.url}}" alt="">
+                            </div>
+                            <div class="title-holder">
+                                <h3><a href="services-details.html">{{i.sarlavha}}</a></h3>
+                                <div class="inner-text">
+                                    <p>{{i.text}}</p>
+                                </div>
+
+                            </div>
+                            <div class="aloqa">
+                                <button><a href="tel:998993937037">Buyurtma Berish</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <!--End Single Service Style1-->
+                    
+                    <!--End Single Service Style1-->
+
+                </div>
+            </div>
+        </section>
+        <!--End Service Style1 Area-->
+
+        <!--Start Video Gallery Style1 Area-->
+        <section class="video-gallery-style1">
+            <div class="container">
+                <div class="video-gallery-style1_content">
+                    <div class="video-gallery-img"
+                        style="background-image: url({% static 'assets/rasm/back1.jpg'%});">
+                        <div class="video-gallery-inner">
+                            <div class="icon wow zoomIn animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/naOvnuAf93U?si=-n0kipLvliXEI-B0&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Video Gallery Style1 Area-->
+
+ {% endblock content %}
