@@ -3,27 +3,28 @@
 {% load static %}
 {% block content %}
 <!--Start breadcrumb area paroller-->     
-<section class="breadcrumb-area">
-    <div class="breadcrumb-area-bg" style="background-image: url({% static 'assets/rasm/contact.png'%});"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="inner-content">
-                    <div class="title">
-                       <h2>Contact Us</h2>
-                    </div>
-                    <div class="breadcrumb-menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-                            <li class="active">Contact Us</li>
-                        </ul>    
-                    </div>
+<section class="hero hero-slider-wrapper business-hero-slider">
+    <div class="hero-slider">
+        <div class="slide">
+            <img src="{% static 'assets/rasm/about-2.png'%}" alt class="slider-bg">
+            <div class="container">
+                <!-- <div class="row">
+                    <h1 style="text-align: center;">Biz sizga Salqin Havo taqdim etamiz</h1>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="{% static 'assets/rasm/slider.png'%}" alt class="slider-bg">
+
+            <div class="container">
+                <div class="row">
+                    
                 </div>
             </div>
         </div>
     </div>
-</section>
+</section> 
 <!--End breadcrumb area-->
 
 
@@ -36,9 +37,9 @@
     <div class="container">
         <div class="sec-title text-center">
             <div class="sub-title">
-                <p>Information</p>
+                <p>Axborotlar</p>
             </div>
-            <h2>Visit our Agency Locations or<br> Contact us Today</h2>
+            <h2>Bizning Zavodimizga Tashrif Buyuring yoki<br> Biz Bilan Bugun Bog'laning </h2>
         </div>
         <div class="row">
             <!--Start Single Contact Info Box-->
@@ -102,7 +103,7 @@
             <div class="col-xl-12">
                 <div class="contact-style1_form">
                     <div class="contact-form">
-                        <form id="contact-form" name="contact_form" class="default-form2" action="/send/" method="post">
+                        <form action="/send/" method="post">
                             {% csrf_token %}
                             <div class="row">
                                 <div class="col-xl-6 col-lg-6">
@@ -112,14 +113,14 @@
                                 </div>
                                 <div class="col-xl-6 col-lg-6">
                                     <div class="input-box"> 
-                                        <input type="email" name="pochta" value="" placeholder="Pochta :" required="">
+                                        <input type="email" name="pochta" value="" placeholder="Pochta :" >
                                     </div>    
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xl-6 col-lg-6">
                                     <div class="input-box">
-                                        <input type="text" name="telfon" value="" placeholder="Telefon :">
+                                        <input type="text" name="telfon" value="" placeholder="Telefon :" default="+998">
                                     </div>   
                                 </div>
                                 <div class="col-xl-6 col-lg-6">
@@ -134,8 +135,7 @@
                                         <textarea name="text" placeholder="Xabar Yozish..." required=""></textarea>
                                     </div>
                                     <div class="button-box">
-                                        <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
-                                        <input class="btn-one" type="submit" data-loading-text="Please wait..." >
+                                        <button id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" >Jonatish</button>
                                             
                              
                                     </div>     

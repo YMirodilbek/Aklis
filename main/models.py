@@ -32,6 +32,8 @@ class Youtube(models.Model):
 class AboutAwards(models.Model):
     rasm = models.ImageField(upload_to='media/')
     sarlavha = models.CharField(max_length=300)
+    sarlavha1 = models.CharField(max_length=300)
+
     text = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
 
@@ -54,7 +56,7 @@ class Xodimlar(models.Model):
 class ContactForm(models.Model):
     ismfamilya = models.CharField(max_length=200)
     pochta = models.EmailField(null=True,blank=True)
-    telefon = models.CharField(max_length=20)
+    telfon = models.CharField(max_length=20)
     murojaat_sababi = models.CharField(max_length=200)
     text = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
@@ -62,3 +64,14 @@ class ContactForm(models.Model):
     
     def __str__(self):
         return self.ismfamilya
+    
+class AboutName(models.Model):
+    rasm = models.ImageField(upload_to='media/')
+    title = models.CharField(max_length=200)
+    li1 = models.CharField(max_length=100)
+    li2 = models.CharField(max_length=100)
+    li3 = models.CharField(max_length=100)
+
+
+    def __str__(self):
+        return self.title

@@ -19,7 +19,16 @@ def Index(request):
     return render(request,'index.html',context)
 
 def About(request):
-    return render(request,'about.html')
+    context={
+        'about':AboutAwards.objects.first(),
+        'name':AboutName.objects.all()
+    }
+    return render(request,'about.html',context)
+
+
+
+def Team(request):
+    return render(request,'team.html')
 
 
 def Contact(request):
@@ -27,12 +36,18 @@ def Contact(request):
 
 def SendForm(request):
     if request.method == "POST":
-        ismfamilya = request.post['ismfamilya']
-        pochta = request.post['pochta']
-        telfon = request.post['telfon']
-        murojaat_sababi = request.post['murojaat_sababi']
-        text = request.post['text']
-        date = request.post['date']
+        ismfamilya = request.POST['ismfamilya']
+        pochta = request.POST['pochta']
+        telfon = request.POST['telfon']
+        murojaat_sababi = request.POST['murojaat_sababi']
+        text = request.POST['text']
 
-        ContactForm.objects.create(ismfamilya=ismfamilya,pochta=pochta,telfon=telfon,murojaat_sababi=murojaat_sababi,text=text,date=date)
-        return redirect(request,'/sms.html/')
+        ContactForm.objects.create(ismfamilya=ismfamilya,pochta=pochta,telfon=telfon,murojaat_sababi=murojaat_sababi,text=text)
+        return redirect('/contact/')
+    
+
+def Error(request, exception=None):
+    return render(request, 'error.html', status=404)
+
+def Product(request):
+    return render(request,'product.html')

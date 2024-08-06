@@ -1,0 +1,305 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin-top: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 100%;
+            margin-top: 100px;
+            padding: 20px;
+        }
+        .product-grid {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 300px;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+        .product-info {
+            padding: 15px;
+        }
+        .product-info h2 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .product-info p {
+            color: #555;
+        }
+        .price {
+            font-size: 1.2em;
+            color: #e74c3c;
+            margin-top: 10px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 10px;
+            color: #fff;
+            background-color: #3498db;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+</style>
+
+    <div class="container">
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div><div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 1">
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$29.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 2">
+                <div class="product-info">
+                    <h2>Product 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$49.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200" alt="Product 3">
+                <div class="product-info">
+                    <h2>Product 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="price">$19.99</div>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </div>
+{% endblock content %}

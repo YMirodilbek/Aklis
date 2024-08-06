@@ -71,9 +71,11 @@
 }
 .sticky-header .main-menu .navigation> li {
     margin-right: 35px;
+
 }
 .sticky-header .main-menu .navigation> li> a {
     padding: 33px 0px 37px;
+
 }
 .sticky-header .main-menu .navigation>li:hover>a,
 .sticky-header .main-menu .navigation>li.current>a{
