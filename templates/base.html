@@ -213,8 +213,45 @@
                             <div class="header-social-link">
                                 <div class="social-link">
                                     <ul class="clearfix">
+                                        {% if url == about %}
                                         <li>
-                                           
+            
+                                            <a href="/ru/contact/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="/uz/contact/"><img src="{% static 'assets/bubly/flags/uzbekistan.png'%}" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="/en/contact/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
+                                        </li>
+                                        {% elif url == contact %}
+                                        <li>
+            
+                                            <a href="/ru/about/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="/uz/about/"><img src="{% static 'assets/bubly/flags/uzbekistan.png'%}" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="/en/about/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
+                                        </li>
+            
+            
+                                       
+                                        {% elif url == product %}
+                                        <li>
+            
+                                            <a href="/ru/product/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="/uz/product/"><img src="{% static 'assets/bubly/flags/uzbekistan.png'%}" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="/en/product/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
+                                        </li>
+                                        {% else %}
+                                        <li>
+            
                                             <a href="/ru/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
                                         </li>
                                         <li>
@@ -223,7 +260,7 @@
                                         <li>
                                             <a href="/en/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
                                         </li>
-                                        
+                                        {% endif %}
                                     </ul>
                                 </div>
                             </div>
@@ -242,7 +279,7 @@
                     <div class="outer-box">
                         <div class="header-left">
                             <div class="logo">
-                                <a href="index.html"><img src="{% static 'assets/rasm/image.png'%}" alt="Awesome Logo"
+                                <a href="index.html"><img src="{% static 'log.png'%}" alt="Awesome Logo"
                                         title="" style="width: 222; height: 53;"></a>
                             </div>
                         </div>
@@ -328,8 +365,45 @@
                     <!--Social Links-->
                     <div class="social-links">
                         <ul class="clearfix">
+                            {% if url == about %}
                             <li>
-                                
+
+                                <a href="/ru/contact/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="/uz/contact/"><img src="{% static 'assets/bubly/flags/uzbekistan.png'%}" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="/en/contact/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
+                            </li>
+                            {% elif url == contact %}
+                            <li>
+
+                                <a href="/ru/about/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="/uz/about/"><img src="{% static 'assets/bubly/flags/uzbekistan.png'%}" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="/en/about/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
+                            </li>
+
+
+                           
+                            {% elif url == product %}
+                            <li>
+
+                                <a href="/ru/product/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="/uz/product/"><img src="{% static 'assets/bubly/flags/uzbekistan.png'%}" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="/en/product/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
+                            </li>
+                            {% else %}
+                            <li>
+
                                 <a href="/ru/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
                             </li>
                             <li>
@@ -338,6 +412,7 @@
                             <li>
                                 <a href="/en/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
                             </li>
+                            {% endif %}
                         </ul>
                     </div>
                 </nav>
@@ -351,229 +426,228 @@
       
         
        
-        <!--Start footer area -->
-        <footer class="footer-area">
-            <div class="shape3 wow slideInLeft" data-wow-delay="500ms" data-wow-duration="7500ms">
-                <img src="{% static 'assets/images/shape/shape-round-3.png'%}" alt="">
-            </div>
-            <div class="shape4 wow slideInRight" data-wow-delay="1000ms" data-wow-duration="6500ms">
-                <img src="{% static 'assets/images/shape/shape-round-4.png'%}" alt="">
-            </div>
-           
-            <!--Start Footer-->
-            <div class="footer">
-            
-                <div class="container">
-                    <div class="row text-right-rtl">
+<footer class="footer-area">
+    <div class="shape3 wow slideInLeft" data-wow-delay="500ms" data-wow-duration="7500ms">
+        <img src="{% static 'assets/images/shape/shape-round-3.png'%}" alt="">
+    </div>
+    <div class="shape4 wow slideInRight" data-wow-delay="1000ms" data-wow-duration="6500ms">
+        <img src="{% static 'assets/images/shape/shape-round-4.png'%}" alt="">
+    </div>
+   
+    <!--Start Footer-->
+    <div class="footer">
+    
+        <div class="container">
+            <div class="row text-right-rtl">
 
-                        <!--Start single footer widget-->
-                        <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12 wow animated fadeInUp" data-wow-delay="0.1s">
-                            <div class="single-footer-widget marbtm50">
-                                <div class="our-company-info">
-                                    <div class="footer-logo">
-                                        <a href="index.html"><img src="{% static 'assets/rasm/image.png'%}"
-                                                alt="" /></a>
-                                    </div>
-                                    <div class="text-box">
-                                        <p>{% trans "Mahsulotimiz barcha turdagi kir yuvish mashinalari bilan mos keladi va qo'lda yuvish uchun ham ishlatilishi mumkin. Xavfsizlik 100% tasdiqlangan, shuning uchun u tanangizga yoki qo'llaringizga ta'sir qilmaydi va kasalliklarga olib kelmaydi"%}.</p>
-                                    </div>
-                                    <div class="footer-social-link">
-                                        <ul class="clearfix">
-                                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                            </li>
-                                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        </ul>
-                                    </div>
-
-                                </div>
+                <!--Start single footer widget-->
+                <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12 wow animated fadeInUp" data-wow-delay="0.1s">
+                    <div class="single-footer-widget marbtm50">
+                        <div class="our-company-info">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="{% static 'assets/rasm/mobillogo.png'%}" style="width: 300; height: 200;"
+                                        alt="" /></a>
                             </div>
-                        </div>
-                        <!--End single footer widget-->
-                        <!--Start single footer widget-->
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.3s">
-                            <div class="single-footer-widget margin__top">
-                                <div class="title">
-                                    <h3>{% trans "Xizmatlar"%}</h3>
-                                </div>
-                                <div class="footer-widget-links">
-                                    <ul>
-                                        <li><a href="/">{% trans "Asosiy"%}</a></li>
-
-
-                                        <li><a href="/about/">{% trans "Biz Haqimizda"%}</a></li>
-                                
-                                        <li><a href="/contact/">{% trans "Aloqa"%}</a></li>
-                                    </ul>
-                                </div>
+                            <div class="text-box">
+                                <p>{% trans "Mahsulotimiz barcha turdagi kir yuvish mashinalari bilan mos keladi va qo'lda yuvish uchun ham ishlatilishi mumkin. Xavfsizlik 100% tasdiqlangan, shuning uchun u tanangizga yoki qo'llaringizga ta'sir qilmaydi va kasalliklarga olib kelmaydi"%}.</p>
                             </div>
-                        </div>
-                        <!--End single footer widget-->
-                        <!--Start single footer widget-->
-                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.5s">
-                            <div class="single-footer-widget margin__top pdtop50">
-                                <div class="title">
-                                    <h3>{% trans "Bog'lanish"%}</h3>
-                                </div>
-                                <div class="footer-widget-contact-info">
-                                    <ul>
-                                        <li>
-                                            <div class="inner">
-                                                <div class="icon mapmarker">
-                                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-
-                                                </div>
-                                                <div class="text">
-                                                    <p>Andijon Viloyat , Paxtaobod Tumani,<br>Madaniyat QFY,DurDiyor MFY</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="inner">
-                                                <div class="icon">
-                                                    <i class="fa fa-phone" aria-hidden="true"></i>
-
-                                                </div>
-                                                <div class="text">
-                                                    <p>Telefon: <a href="tel:123456789">+998 97-169-77-99</a></p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="inner">
-                                                <div class="icon">
-                                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-
-
-                                                </div>
-                                                <div class="text">
-                                                    <p><a href="mailto:yourmail@email.com">aklis_uz@mail.ru</a></p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="footer-social-link">
+                                <ul class="clearfix">
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://maps.app.goo.gl/yxEUmxrG5BYuCBgXA"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                </ul>
                             </div>
+
                         </div>
-                        <!--End single footer widget-->
                     </div>
                 </div>
-            </div>
-            <!--End Footer-->
-
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="bottom-inner">
-                        <div class="copyright">
-                            <p>Masul Shaxs &copy;<a href="index.html"> 2024 NanoIt ltd.</a> Xizmatlarimiz Sertifikatlangan.</p>
+                <!--End single footer widget-->
+                <!--Start single footer widget-->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.3s">
+                    <div class="single-footer-widget margin__top">
+                        <div class="title">
+                            <h3>{% trans "Xizmatlar"%}</h3>
                         </div>
-                        <div class="footer-menu">
-                            <ul class="footer-nav">
-                                <li><a href="index.html">Xizmatlarimiz</a></li>
-                                <li><a href="index.html">Foydalanish Shartlari</a></li>
+                        <div class="footer-widget-links">
+                            <ul>
+                                <li><a href="/">{% trans "Asosiy"%}</a></li>
+
+
+                                <li><a href="/about/">{% trans "Biz Haqimizda"%}</a></li>
+                        
+                                <li><a href="/contact/">{% trans "Aloqa"%}</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-
-        </footer>
-        <!--End footer area-->
-
-        
-        <button class="scroll-top scroll-to-target" data-target="html">
-            <i class="fa fa-arrow-up" aria-hidden="true"></i>
-
-        </button>
-        
-
-
-
-        <!-- search-popup -->
-        <div id="search-popup" class="search-popup">
-            <div class="close-search"><i class="icon-close"></i></div>
-            <div class="popup-inner">
-                <div class="overlay-layer"></div>
-                <div class="search-form">
-                    <form method="post" action="index.html">
-                        <div class="form-group">
-                            <fieldset>
-                                <input type="search" class="form-control" name="search-input" value=""
-                                    placeholder="Search Here" required>
-                                <input type="submit" value="Search Now!" class="theme-btn style-four">
-                            </fieldset>
+                <!--End single footer widget-->
+                <!--Start single footer widget-->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.5s">
+                    <div class="single-footer-widget margin__top pdtop50">
+                        <div class="title">
+                            <h3>{% trans "Bog'lanish"%}</h3>
                         </div>
-                    </form>
-                    <h3>Recent Search Keywords</h3>
-                    <ul class="recent-searches">
-                        <li><a href="index.html">Safety Tips</a></li>
-                        <li><a href="index.html">Filteration</a></li>
-                        <li><a href="index.html">Accessories</a></li>
-                        <li><a href="index.html">Tools</a></li>
-                        <li><a href="index.html">Design</a></li>
+                        <div class="footer-widget-contact-info">
+                            <ul>
+                                <li>
+                                    <div class="inner">
+                                        <div class="icon mapmarker">
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+
+                                        </div>
+                                        <div class="text">
+                                            <p>Andijon Viloyat , Paxtaobod Tumani,<br>Madaniyat QFY,DurDiyor MFY</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+
+                                        </div>
+                                        <div class="text">
+                                            <p>Telefon: <a href="tel:998971697799">+998 97-169-77-99</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+
+
+                                        </div>
+                                        <div class="text">
+                                            <p><a href="mailto:aklis_uz@mail.ru">aklis_uz@mail.ru</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--End single footer widget-->
+            </div>
+        </div>
+    </div>
+    <!--End Footer-->
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="bottom-inner">
+                <div class="copyright">
+                    <p>Masul Shaxs &copy;<a href="index.html"> 2024 NanoIt ltd.</a> Xizmatlarimiz Sertifikatlangan.</p>
+                </div>
+                <div class="footer-menu">
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Xizmatlarimiz</a></li>
+                        <li><a href="index.html">Foydalanish Shartlari</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <!-- search-popup end -->
-
-
     </div>
 
+</footer>
+<!--End footer area-->
+
+
+<button class="scroll-top scroll-to-target" data-target="html">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+
+</button>
 
 
 
 
-    <script src="{% static 'assets/js/hero.js'%}"></script>
+<!-- search-popup -->
+<div id="search-popup" class="search-popup">
+    <div class="close-search"><i class="icon-close"></i></div>
+    <div class="popup-inner">
+        <div class="overlay-layer"></div>
+        <div class="search-form">
+            <form method="post" action="index.html">
+                <div class="form-group">
+                    <fieldset>
+                        <input type="search" class="form-control" name="search-input" value=""
+                            placeholder="Search Here" required>
+                        <input type="submit" value="Search Now!" class="theme-btn style-four">
+                    </fieldset>
+                </div>
+            </form>
+            <h3>Recent Search Keywords</h3>
+            <ul class="recent-searches">
+                <li><a href="index.html">Safety Tips</a></li>
+                <li><a href="index.html">Filteration</a></li>
+                <li><a href="index.html">Accessories</a></li>
+                <li><a href="index.html">Tools</a></li>
+                <li><a href="index.html">Design</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- search-popup end -->
 
-    <script src="{% static 'assets/js/jquery.js'%}"></script>
-    <script src="{% static 'assets/js/aos.js'%}"></script>
-    <script src="{% static 'assets/js/appear.js'%}"></script>
-    <script src="{% static 'assets/js/bootstrap.bundle.min.js'%}"></script>
-    <script src="{% static 'assets/js/bootstrap-select.min.js'%}"></script>
-    <script src="{% static 'assets/js/isotope.js'%}"></script>
-    <script src="{% static 'assets/js/jquery.countTo.js'%}"></script>
-    <script src="{% static 'assets/js/jquery.easing.min.js'%}"></script>
-    <script src="{% static 'assets/js/jquery.enllax.min.js'%}"></script>
-    <script src="{% static 'assets/js/jquery.fancybox.js'%}"></script>
-    <script src="{% static 'assets/js/jquery.magnific-popup.min.js'%}"></script>
-    <script src="{% static 'assets/js/jquery.paroller.min.js'%}"></script>
-    <script src="{% static 'assets/js/jquery-ui.js'%}"></script>
-    <script src="{% static 'assets/js/knob.js'%}"></script>
-    <script src="{% static 'assets/js/map-script.js'%}"></script>
-    <script src="{% static 'assets/js/owl.js'%}"></script>
-    <script src="{% static 'assets/js/pagenav.js'%}"></script>
-    <script src="{% static 'assets/js/parallax.min.js'%}"></script>
-    <script src="{% static 'assets/js/scrollbar.js'%}"></script>
-    <script src="{% static 'assets/js/TweenMax.min.js'%}"></script>
-    <script src="{% static 'assets/js/validation.js'%}"></script>
-    <script src="{% static 'assets/js/wow.js'%}"></script>
-    <script src="{% static 'assets/js/color-switcher.min.js'%}"></script>
 
-    <script src="{% static 'assets/js/jquery.bootstrap-touchspin.js'%}"></script>
-    <script src="{% static 'assets/js/jquery.nice-select.min.js'%}"></script>
-    <script src="{% static 'assets/js/tilt.jquery.js'%}"></script>
-    <!-- thm custom script -->
-    <script src="{% static 'assets/js/custom.js'%}"></script>
-
+</div>
 
 
 
 
 
-    <script src="{% static 'mane/mane/js/jquery.min.js'%}"></script>
-    <script src="{% static 'mane/mane/js/bootstrap.min.js'%}"></script>
+<script src="{% static 'assets/js/hero.js'%}"></script>
 
-    <!-- Plugins for this template -->
-    <script src="{% static 'mane/mane/js/moment.js'%}"></script>
-    <script src="{% static 'mane/mane/js/jquery-plugin-collection.js'%}"></script>
+<script src="{% static 'assets/js/jquery.js'%}"></script>
+<script src="{% static 'assets/js/aos.js'%}"></script>
+<script src="{% static 'assets/js/appear.js'%}"></script>
+<script src="{% static 'assets/js/bootstrap.bundle.min.js'%}"></script>
+<script src="{% static 'assets/js/bootstrap-select.min.js'%}"></script>
+<script src="{% static 'assets/js/isotope.js'%}"></script>
+<script src="{% static 'assets/js/jquery.countTo.js'%}"></script>
+<script src="{% static 'assets/js/jquery.easing.min.js'%}"></script>
+<script src="{% static 'assets/js/jquery.enllax.min.js'%}"></script>
+<script src="{% static 'assets/js/jquery.fancybox.js'%}"></script>
+<script src="{% static 'assets/js/jquery.magnific-popup.min.js'%}"></script>
+<script src="{% static 'assets/js/jquery.paroller.min.js'%}"></script>
+<script src="{% static 'assets/js/jquery-ui.js'%}"></script>
+<script src="{% static 'assets/js/knob.js'%}"></script>
+<script src="{% static 'assets/js/map-script.js'%}"></script>
+<script src="{% static 'assets/js/owl.js'%}"></script>
+<script src="{% static 'assets/js/pagenav.js'%}"></script>
+<script src="{% static 'assets/js/parallax.min.js'%}"></script>
+<script src="{% static 'assets/js/scrollbar.js'%}"></script>
+<script src="{% static 'assets/js/TweenMax.min.js'%}"></script>
+<script src="{% static 'assets/js/validation.js'%}"></script>
+<script src="{% static 'assets/js/wow.js'%}"></script>
+<script src="{% static 'assets/js/color-switcher.min.js'%}"></script>
 
-    <!-- Google map api -->
-    <script src="https://maps.googleapis.com/maps/api/js?key"></script>
+<script src="{% static 'assets/js/jquery.bootstrap-touchspin.js'%}"></script>
+<script src="{% static 'assets/js/jquery.nice-select.min.js'%}"></script>
+<script src="{% static 'assets/js/tilt.jquery.js'%}"></script>
+<!-- thm custom script -->
+<script src="{% static 'assets/js/custom.js'%}"></script>
 
-    <!-- Custom script for this template -->
-    <script src="{% static 'mane/mane/js/hero.js'%}"></script>
+
+
+
+
+
+<script src="{% static 'mane/mane/js/jquery.min.js'%}"></script>
+<script src="{% static 'mane/mane/js/bootstrap.min.js'%}"></script>
+
+<!-- Plugins for this template -->
+<script src="{% static 'mane/mane/js/moment.js'%}"></script>
+<script src="{% static 'mane/mane/js/jquery-plugin-collection.js'%}"></script>
+
+<!-- Google map api -->
+<script src="https://maps.googleapis.com/maps/api/js?key"></script>
+
+<!-- Custom script for this template -->
+<script src="{% static 'mane/mane/js/hero.js'%}"></script>
 
 
 
