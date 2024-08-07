@@ -2,6 +2,8 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
+{% load i18n %}
+
 <!--Start breadcrumb area paroller-->     
 <section class="hero hero-slider-wrapper business-hero-slider">
     <div class="hero-slider">
@@ -37,9 +39,9 @@
     <div class="container">
         <div class="sec-title text-center">
             <div class="sub-title">
-                <p>Axborotlar</p>
+                <p>{% trans "Axborotlar"%}</p>
             </div>
-            <h2>Bizning Zavodimizga Tashrif Buyuring yoki<br> Biz Bilan Bugun Bog'laning </h2>
+            <h2>{% trans "Bizning Zavodimizga Tashrif Buyuring yoki"%}<br> {% trans "Biz Bilan Bugun Bog'laning"%} </h2>
         </div>
         <div class="row">
             <!--Start Single Contact Info Box-->
@@ -49,8 +51,8 @@
                         <span class="fa fa-map-marker"></span>
                     </div>
                     <div class="text">
-                        <h4>Bizning Manzilimiz </h4>
-                        <p>Un Zavod ko'chasi , 24-uy, Andijon Shahar <br>Uzbekistan</p>
+                        <h4>{% trans "Bizning Manzilimiz"%} </h4>
+                        <p>{{info.addres}}</p>
                     </div>
                 </div>
             </div>
@@ -62,9 +64,9 @@
                         <span class="fa fa-envelope-o"></span>
                     </div>
                     <div class="text">
-                        <h4>Bizning Pochtamiz</h4>
-                        <p class="text1"><a href="mailto:yourmail@email.com">Aklis@gmail.com</a></p>
-                        <p class="text2"><a href="mailto:yourmail@email.com">Aklis@gmail.com</a></p>
+                        <h4>{% trans "Bizning Pochtamiz"%}</h4>
+                        <p class="text1"><a href="mailto:yourmail@email.com">{{info.pochta}}</a></p>
+                        <p class="text2"><a href="mailto:yourmail@email.com">{{info.pochta}}</a></p>
                     </div>
                 </div>
             </div>
@@ -76,9 +78,9 @@
                         <span class="fa fa-phone-square" aria-hidden="true"></span>
                     </div>
                     <div class="text">
-                        <h4>Contact Us</h4>
-                        <p class="text1"><a href="tel:123456789">+998993937037</a></p>
-                        <p class="text2"><a href="tel:123456789">+998993937037</a></p>
+                        <h4>{% trans "Qo'ng'iroq"%}</h4>
+                        <p class="text1"><a href="tel:123456789">{{info.phone1}}</a></p>
+                        <p class="text2"><a href="tel:123456789">{{info.phone2}}</a></p>
                     </div>
                 </div>
             </div>
@@ -95,9 +97,9 @@
     <div class="container">
         <div class="sec-title text-center">
             <div class="sub-title">
-                <p>Malumotlar</p>
+                <p>{% trans "Ma'lumotlar"%}</p>
             </div>
-            <h2>Bizga Xabar Yuboring </h2>
+            <h2>{% trans "Bizga Xabar Yuboring "%}</h2>
         </div>
         <div class="row">
             <div class="col-xl-12">
@@ -135,7 +137,7 @@
                                         <textarea name="text" placeholder="Xabar Yozish..." required=""></textarea>
                                     </div>
                                     <div class="button-box">
-                                        <button id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" >Jonatish</button>
+                                        <button id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" >{% trans "Jonatish"%}</button>
                                             
                              
                                     </div>     

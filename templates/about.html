@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
+{% load i18n %}
+
 <!--Start breadcrumb area paroller-->     
 <section class="hero hero-slider-wrapper business-hero-slider">
     <div class="hero-slider">
@@ -41,11 +43,14 @@
                 <div class="about-style2__image-box">
                     <div class="inner">
                         <img src="{{about.rasm.url}}" alt="">
+                        <img src="{{about.rasm1.url}}" alt="">
+
                     </div>
+                    
                     <div class="content-box paroller wow zoomIn" data-wow-delay="500ms" data-wow-duration="2500ms">
                         <span class="flaticon-troph"></span>
                         <h3>{{about.sarlavha1}}</h3>
-                        <p>Analysis</p>
+                        
                     </div>
                     <div class="icon-holder paroller">
                         <span class="fa fa-trophy" aria-hidden="true" style="margin-left: 25px;"></span>
@@ -57,7 +62,7 @@
                 <div class="about-style1__content about-style1__content--style2">
                     <div class="sec-title">
                         <div class="sub-title">
-                            <p>Aklis Haqida</p>
+                            <p>{% trans "Aklis Haqida"%}</p>
                         </div>
                         <h2>{{about.sarlavha}}.</h2>
                     </div>
@@ -66,7 +71,7 @@
                         <div class="bottom-box">
                             <div class="btns-box">
                                 <a class="btn-one" href="/contact/">
-                                    <span class="txt">Bog'lanish</span>
+                                    <span class="txt">{% trans "Bog'lanish"%}</span>
                                 </a>
                             </div>    
                         </div>
@@ -92,15 +97,28 @@
                 <div class="choose-style1__title">
                     <div class="sec-title">
                         <div class="sub-title">
-                            <p>Nima Uchun</p>
+                            <p>{% trans "Nima Uchun"%}</p>
                         </div>
-                        <h2>Ko'plab Insonlar <br> Bizni Tanlshmoqda ?</h2>
+                        <h2>{% trans "Ko'plab Insonlar"%} <br> {% trans "Bizni Tanlshmoqda"%} ?</h2>
                     </div>
                     <div class="inner-text">
-                        <p>Bizga Qo'ng'iroq qiling yoki Tashrif Buyuring .</p>
+                        <p>{% trans "Bizga Qo'ng'iroq qiling yoki Tashrif Buyuring"%} .</p>
+                        <p>{% trans "Biz 13 turdagi kukun mahsulotlari ishlab chiqarishga ixtisoslashganmiz, jumladan:"%}</p>
+                            <li> - {% trans "Monoksid"%}</li>
+                            <li> - {% trans "Tripolifosfat natriy"%}</li>
+                            <li> - {% trans "Fermentlar"%}</li>
+                            <li> - {% trans "Aromatik hidlar"%}</li>
+                            
+                            <h4>{% trans "Asosiy xususiyatlari va foydalari"%}</h4>
+                            
+                            <li>1. {% trans "Rangni himoya qilish: Turli xil rang-barang kiyimlarni ranglarning aralashuvidan qo'rqmasdan yuvish. Mahsulotimiz kiyimlaringizning yorqinligini saqlaydi"%}.</li>
+                            <li>2. {% trans "Tuklarni olib tashlash: Kiyimlaringizdagi tuklarni samarali olib tashlab, ularni yangi ko'rinishda saqlaydi"%}.</li>
+                            <li>3. {% trans "Rangni tiklash: Agar kiyimlaringiz rangi yo'qolgan bo'lsa, mahsulotimiz ularning asl rangini tiklashga yordam beradi"%}.</li>
+                            <li>4. {% trans "Ko'p maqsadli foydalanish: Gilamlarni yuvishda ham qo'llaniladi, mahsulotimiz gilamlar tolalarini tiklashga yordam beradi"%}.</li>
+                            <li>5. {% trans "Qulay qadoqlash: Mahsulotimiz zamok bilan yopilgan bo'lib, foydalanishda qulay va osondir"%}.</li>
                         <div class="btns-box">
                             <a class="btn-one style2" href="/contact/">
-                                <span class="txt">Aloqa</span>
+                                <span class="txt">{% trans "Aloqa"%}</span>
                             </a>
                         </div>
                     </div>
@@ -146,9 +164,9 @@
                 <div class="team-style1__top-title">
                     <div class="sec-title">
                         <div class="sub-title">
-                            <p>Jamoamiz Azolari</p>
+                            <p>{% trans "Jamoamiz Azolari"%}</p>
                         </div>
-                        <h2>Bizning Tajribali Va <br>Kreativ Jamoamiz Azolari .</h2>
+                        <h2>{% trans "Bizning Tajribali Va"%} <br>{% trans "Kreativ Jamoamiz Azolari"%} .</h2>
                     </div>
                     
                 </div>
@@ -156,6 +174,7 @@
         </div>
         <div class="row">
             <!--Start Single Team Style1-->
+            {% for i in xodim %}
             <div class="col-xl-4 col-lg-4">
                 <div class="single-team-style1 wow fadeInLeft animated" data-wow-delay="100ms" data-wow-duration="1500ms">
                     <div class="img-holder">
@@ -165,8 +184,8 @@
                         </div>
                     </div>
                     <div class="title-holder">
-                        <h3><a href="#">Christian Bale</a></h3>
-                        <p>CEO & Founder</p>
+                        <h3><a href="#">{{i.ismfamilya}}</a></h3>
+                        <p>{{i.kasbi}}</p>
                         <div class="social-link-box">
                             <ul class="team-social-link">
                                 <li>
@@ -183,66 +202,11 @@
                     </div>
                 </div>
             </div>
+            {% endfor %}
             <!--End Single Team Style1-->
 
             <!--Start Single Team Style1-->
-            <div class="col-xl-4 col-lg-4">
-                <div class="single-team-style1 wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-                    <div class="img-holder">
-                        <div class="inner">
-                            <img src="{% static 'assets/images/team/team-v1-2.jpg'%}" alt=""/>
-                            <div class="overlay-bg"></div>
-                        </div>
-                    </div>
-                    <div class="title-holder">
-                        <h3><a href="#">Christian Bale</a></h3>
-                        <p>Programmer</p>
-                        <div class="social-link-box">
-                            <ul class="team-social-link">
-                                <li>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End Single Team Style1-->
-
-            <!--Start Single Team Style1-->
-            <div class="col-xl-4 col-lg-4">
-                <div class="single-team-style1 wow fadeInRight animated" data-wow-delay="100ms" data-wow-duration="1500ms">
-                    <div class="img-holder">
-                        <div class="inner">
-                            <img class="rotateScale" src="{% static 'assets/images/team/team-v1-3.jpg'%}" alt=""/>
-                            <div class="overlay-bg"></div>
-                        </div>
-                    </div>
-                    <div class="title-holder">
-                        <h3><a href="#">Christian Bale</a></h3>
-                        <p>Support Manager</p>
-                        <div class="social-link-box">
-                            <ul class="team-social-link">
-                                <li>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
             <!--End Single Team Style1-->
           
         </div>

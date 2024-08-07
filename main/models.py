@@ -5,7 +5,7 @@ from django_resized import ResizedImageField
 
 class Mahsulotlar(models.Model):
     rasm = ResizedImageField(size=[330, 440], upload_to='media/')
-    sarlavha = models.CharField(max_length=120, null=True,blank=True)
+    sarlavha = models.CharField(max_length=120)
     text = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
 
@@ -31,9 +31,10 @@ class Youtube(models.Model):
 
 class AboutAwards(models.Model):
     rasm = models.ImageField(upload_to='media/')
+    rasm1 = models.ImageField(upload_to='media/')
+
     sarlavha = models.CharField(max_length=300)
     sarlavha1 = models.CharField(max_length=300)
-
     text = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
 
@@ -43,10 +44,10 @@ class AboutAwards(models.Model):
 class Xodimlar(models.Model):
     ismfamilya = models.CharField(max_length=200)
     kasbi = models.CharField(max_length=200)
-    rasmi = models.ImageField(upload_to='media/')
-    instagram = models.CharField(max_length=300)
-    facebook = models.CharField(max_length=300)
-    youtube = models.CharField(max_length=300)
+    rasmi = models.ImageField(upload_to='media/',null=True,blank=True)
+    instagram = models.CharField(max_length=300,null=True,blank=True)
+    facebook = models.CharField(max_length=300,null=True,blank=True)
+    youtube = models.CharField(max_length=300,null=True,blank=True)
 
     date = models.DateTimeField(auto_now_add=True)
 
@@ -73,5 +74,22 @@ class AboutName(models.Model):
     li3 = models.CharField(max_length=100)
 
 
+    def __str__(self):
+        return self.title
+    
+class Info(models.Model):
+    addres = models.CharField(max_length=200)
+    pochta = models.EmailField()
+    phone1 = models.CharField(max_length = 17)
+    phone2 = models.CharField(max_length=17)
+
+    def __str__(self):
+        return self.addres
+    
+
+class Product(models.Model):
+    rasm = models.ImageField(upload_to='media/')
+    title = models.CharField(max_length=200)
+    text = models.TextField()
     def __str__(self):
         return self.title

@@ -2,6 +2,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
+{% load i18n %}
         <!-- Start Main Slider -->
         <!-- <section class="main-slider style1">
             <div class="slider-box">
@@ -98,9 +99,9 @@
                         <div class="project-top-title">
                             <div class="sec-title">
                                 <div class="sub-title">
-                                    <p>Bizning Mahsulotlarimiz </p>
+                                    <p>{% trans "Bizning Mahsulotlarimiz"%} </p>
                                 </div>
-                                <h2>Recent Projects On<br> Real Estate.</h2>
+                                <h2>{% trans "SUPER Aklis: Kafolatlangan sifatli porlash"%}</h2>
                             </div>
                         </div>
                         <!--Start Single project Item-->
@@ -120,7 +121,7 @@
                                 <h4><a href="project-details.html">{{mah1.nomi}}</a></h4>
                                 <div class="category">
                                     <div class="border-box"></div>
-                                    <a href="tel:998993937037"><p>Xarid Qiling</p></a>
+                                    <a href="tel:998971697799"><p>{% trans "Xarid Qiling"%}</p></a>
 
                                 </div>
                             </div>
@@ -147,7 +148,7 @@
                                 <h4><a href="project-details.html">{{mah2.nomi}}</a></h4>
                                 <div class="category">
                                     <div class="border-box"></div>
-                                    <a href="tel:998993937037"><p>Xarid Qiling</p></a>
+                                    <a href="tel:998971697799"><p>{% trans "Xarid Qiling"%}</p></a>
 
                                 </div>
                             </div>
@@ -173,7 +174,8 @@
                                 <h4><a href="project-details.html">{{mah3.nomi}}</a></h4>
                                 <div class="category">
                                     <div class="border-box"></div>
-                                    <a href="tel:998993937037"><p>Xarid Qiling</p></a>
+                                    <a href="tel:998971697799"><p>{% trans "Xarid Qiling"%}</p></a>
+
                                 </div>
                             </div>
                         </div>
@@ -198,7 +200,8 @@
                                 <h4><a href="project-details.html">{{mah4.nomi}}</a></h4>
                                 <div class="category">
                                     <div class="border-box"></div>
-                                    <a href="tel:998993937037"><p>Xarid Qiling</p></a>
+                                    <a href="tel:998971697799"><p>{% trans "Xarid Qiling"%}</p></a>
+
 
                                 </div>
                             </div>
@@ -222,9 +225,9 @@
             <div class="container">
                 <div class="sec-title text-center">
                     <div class="sub-title">
-                        <p>Bizning Mahsulotlarimiz </p>
+                        <p>{% trans "Bizning Mahsulotlarimiz"%} </p>
                     </div>
-                    <h2>We Provide Superb Services.</h2>
+                    <h2>{% trans "Bizning Barcha Mahsulotlarimiz"%} <a href="/product/">{% trans "Mahsulotlar"%}</a>.{% trans "Bo'limida"%}</h2>
                 </div>
                 <div class="row">
                     <!--Start Single Service Style1-->
@@ -237,12 +240,12 @@
                             <div class="title-holder">
                                 <h3><a href="services-details.html">{{i.sarlavha}}</a></h3>
                                 <div class="inner-text">
-                                    <p>{{i.text}}</p>
+                                    <p>{{i.text|truncatechars:50}}</p>
                                 </div>
 
                             </div>
                             <div class="aloqa">
-                                <button><a href="tel:998993937037">Buyurtma Berish</a></button>
+                                <button><a href="tel:998971697799">{% trans "Buyurtma Berish"%}</a></button>
                             </div>
                         </div>
                     </div>

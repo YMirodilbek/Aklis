@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -122,7 +123,7 @@
         <!-- Preloader -->
         <div class="loader-wrap">
             <div class="preloader">
-                <div class="preloader-close">Preloader Close</div>
+                <div class="preloader-close">{% trans "Tugatish"%}</div>
             </div>
             <div class="layer layer-one"><span class="overlay"></span></div>
             <div class="layer layer-two"><span class="overlay"></span></div>
@@ -130,10 +131,7 @@
         </div>
 
         <!-- page-direction -->
-        <div class="page_direction">
-            <div class="demo-rtl direction_switch"><button class="rtl">RTL</button></div>
-            <div class="demo-ltr direction_switch"><button class="ltr">LTR</button></div>
-        </div>
+        
         <!-- page-direction end -->
 
 
@@ -187,7 +185,7 @@
 
                                         </div>
                                         <div class="text">
-                                            <h6>Andijon Shahar , Un Zavod kochasi 24</h6>
+                                            <h6>Andijon Viloyat , Paxtaobod Tumani,Madaniyat QFY,DurDiyor MFY</h6>
                                         </div>
                                     </li>
                                     <li>
@@ -204,7 +202,7 @@
 
                                         </div>
                                         <div class="text">
-                                            <h6><a href="tel:123456789">+998993937037</a></h6>
+                                            <h6><a href="tel:123456789">+998 97-169-77-99</a></h6>
                                         </div>
                                     </li>
                                 </ul>
@@ -216,6 +214,7 @@
                                 <div class="social-link">
                                     <ul class="clearfix">
                                         <li>
+                                           
                                             <a href="/ru/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
                                         </li>
                                         <li>
@@ -228,10 +227,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="thm-space-box"></div>
-                            <div class="signin-box">
-                                <a href="#"><span class="flaticon-user-2"></span> Sign In</a>
-                            </div>
+                           
                         </div>
 
                     </div>
@@ -265,15 +261,15 @@
                                 <nav class="main-menu style1 navbar-expand-md navbar-light">
                                     <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                         <ul class="navigation clearfix">
-                                            <li class=""><a href="/">Asosiy</a></li>
+                                            <li class=""><a href="/">{% trans "Asosiy"%}</a></li>
    
                                             
-                                            <li><a href="/about/">Biz Haqimizda </a></li>
+                                            <li><a href="/about/">{% trans "Biz Haqimizda"%} </a></li>
                                         
                                             
                                            
                         
-                                            <li><a href="/contact/">Aloqa</a></li>
+                                            <li><a href="/contact/">{% trans "Aloqa"%}</a></li>
                                         </ul>
                                     </div>
                                 </nav>
@@ -287,7 +283,7 @@
                             <div class="header-right_buttom">
                                 <div class="btns-box">
                                     <a class="btn-one" href="contact.html">
-                                        <span class="txt">Aloqa</span>
+                                        <span class="txt">{% trans "Aloqa"%}</span>
                                     </a>
                                 </div>
                             </div>
@@ -333,13 +329,14 @@
                     <div class="social-links">
                         <ul class="clearfix">
                             <li>
-                                <a href="#"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
+                                
+                                <a href="/ru/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
                             </li>
                             <li>
-                                <a href="#"><img src="{% static 'assets/bubly/flags/uzbekistan.png'%}" alt=""></a>
+                                <a href="/uz/"><img src="{% static 'assets/bubly/flags/uzbekistan.png'%}" alt=""></a>
                             </li>
                             <li>
-                                <a href="#"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
+                                <a href="/en/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
                             </li>
                         </ul>
                     </div>
@@ -378,10 +375,7 @@
                                                 alt="" /></a>
                                     </div>
                                     <div class="text-box">
-                                        <p>Foydalanish uchun mos: qo'lda va kir yuvish mashinasida yuvish parashogi.
-                                            Kir yuvish vositasi: kiyim, oq, qora va rangli kirlarni yuvish uchun mo'ljallangan
-                                            Sertifikatlarimiz bilan "sertifikatlar" bo'limida tanishishingiz mumkin.
-                                            </p>
+                                        <p>{% trans "Mahsulotimiz barcha turdagi kir yuvish mashinalari bilan mos keladi va qo'lda yuvish uchun ham ishlatilishi mumkin. Xavfsizlik 100% tasdiqlangan, shuning uchun u tanangizga yoki qo'llaringizga ta'sir qilmaydi va kasalliklarga olib kelmaydi"%}.</p>
                                     </div>
                                     <div class="footer-social-link">
                                         <ul class="clearfix">
@@ -401,13 +395,16 @@
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.3s">
                             <div class="single-footer-widget margin__top">
                                 <div class="title">
-                                    <h3>Services</h3>
+                                    <h3>{% trans "Xizmatlar"%}</h3>
                                 </div>
                                 <div class="footer-widget-links">
                                     <ul>
-                                        <li><a href="/about/">Biz Haqimizda</a></li>
+                                        <li><a href="/">{% trans "Asosiy"%}</a></li>
+
+
+                                        <li><a href="/about/">{% trans "Biz Haqimizda"%}</a></li>
                                 
-                                        <li><a href="/contact/">Aloqa</a></li>
+                                        <li><a href="/contact/">{% trans "Aloqa"%}</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -417,7 +414,7 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.5s">
                             <div class="single-footer-widget margin__top pdtop50">
                                 <div class="title">
-                                    <h3>Bog'lanish</h3>
+                                    <h3>{% trans "Bog'lanish"%}</h3>
                                 </div>
                                 <div class="footer-widget-contact-info">
                                     <ul>
@@ -428,7 +425,7 @@
 
                                                 </div>
                                                 <div class="text">
-                                                    <p>Andijon Shahar<br> Un zavod Kochasi, 27 B</p>
+                                                    <p>Andijon Viloyat , Paxtaobod Tumani,<br>Madaniyat QFY,DurDiyor MFY</p>
                                                 </div>
                                             </div>
                                         </li>
@@ -439,7 +436,7 @@
 
                                                 </div>
                                                 <div class="text">
-                                                    <p>Telefon: <a href="tel:123456789">+998993937037</a></p>
+                                                    <p>Telefon: <a href="tel:123456789">+998 97-169-77-99</a></p>
                                                 </div>
                                             </div>
                                         </li>
@@ -451,7 +448,7 @@
 
                                                 </div>
                                                 <div class="text">
-                                                    <p><a href="mailto:yourmail@email.com">mirodilbek.backend@gmail.com</a></p>
+                                                    <p><a href="mailto:yourmail@email.com">aklis_uz@mail.ru</a></p>
                                                 </div>
                                             </div>
                                         </li>

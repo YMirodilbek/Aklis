@@ -3,12 +3,12 @@ from .models import *
 
 @register(Mahsulotlar)
 class MahsulotlarTranslationOptions(TranslationOptions):
-    fileds=('sarlavha','text')
+    fields=('sarlavha','text')
 
 
 @register(Xodimlar)
 class XodimlarTranslationOptions(TranslationOptions):
-    fileds=('ismfamilya','kasbi')
+    fields=('ismfamilya','kasbi')
 
 @register(AboutAwards)
 class AboutAwardsTranslationOptions(TranslationOptions):
@@ -22,3 +22,12 @@ class AboutNameTranslationOptions(TranslationOptions):
 @register(BizningMahsulot)
 class BizningMahsulotTranslationOptions(TranslationOptions):
     fields = ('nomi','date')
+
+@register(Info)
+class InfoTranslationOptions(TranslationOptions):
+    fields = ('addres','pochta')
+
+
+@register(Product)
+class ProductTranslationOptions(TranslationOptions):
+    fields=('title','text')

@@ -21,7 +21,8 @@ def Index(request):
 def About(request):
     context={
         'about':AboutAwards.objects.first(),
-        'name':AboutName.objects.all()
+        'name':AboutName.objects.all(),
+        'xodim':Xodimlar.objects.all()
     }
     return render(request,'about.html',context)
 
@@ -32,7 +33,10 @@ def Team(request):
 
 
 def Contact(request):
-    return render(request,'contact.html')
+    context={
+        'info':Info.objects.first()
+    }
+    return render(request,'contact.html',context)
 
 def SendForm(request):
     if request.method == "POST":
@@ -49,5 +53,8 @@ def SendForm(request):
 def Error(request, exception=None):
     return render(request, 'error.html', status=404)
 
-def Product(request):
-    return render(request,'product.html')
+def Product1(request):
+    context={
+        'product':Product.objects.all()
+    }
+    return render(request,'product.html',context)
