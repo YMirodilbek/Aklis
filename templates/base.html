@@ -213,45 +213,8 @@
                             <div class="header-social-link">
                                 <div class="social-link">
                                     <ul class="clearfix">
-                                        {% if url == about %}
+                                     {% if url == about%}
                                         <li>
-            
-                                            <a href="/ru/contact/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="/uz/contact/"><img src="{% static 'assets/bubly/flags/uzbekistan.png'%}" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="/en/contact/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
-                                        </li>
-                                        {% elif url == contact %}
-                                        <li>
-            
-                                            <a href="/ru/about/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="/uz/about/"><img src="{% static 'assets/bubly/flags/uzbekistan.png'%}" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="/en/about/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
-                                        </li>
-            
-            
-                                       
-                                        {% elif url == product %}
-                                        <li>
-            
-                                            <a href="/ru/product/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="/uz/product/"><img src="{% static 'assets/bubly/flags/uzbekistan.png'%}" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="/en/product/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
-                                        </li>
-                                        {% else %}
-                                        <li>
-            
                                             <a href="/ru/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
                                         </li>
                                         <li>
@@ -260,7 +223,27 @@
                                         <li>
                                             <a href="/en/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
                                         </li>
-                                        {% endif %}
+                                        {% elif url == contact%}
+                                        <li>
+                                            <a href="/ru/about/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="/uz/about/"><img src="{% static 'assets/bubly/flags/uzbekistan.png'%}" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="/en/about/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
+                                        </li>
+                                        {% elif url == index%}
+                                        <li>
+                                            <a href="/ru/contact/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="/uz/contact/"><img src="{% static 'assets/bubly/flags/uzbekistan.png'%}" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="/en/contact/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
+                                        </li>
+                                    {% endif %}
                                     </ul>
                                 </div>
                             </div>
@@ -365,43 +348,7 @@
                     <!--Social Links-->
                     <div class="social-links">
                         <ul class="clearfix">
-                            {% if url == about %}
-                            <li>
-
-                                <a href="/ru/contact/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="/uz/contact/"><img src="{% static 'assets/bubly/flags/uzbekistan.png'%}" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="/en/contact/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
-                            </li>
-                            {% elif url == contact %}
-                            <li>
-
-                                <a href="/ru/about/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="/uz/about/"><img src="{% static 'assets/bubly/flags/uzbekistan.png'%}" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="/en/about/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
-                            </li>
-
-
-                           
-                            {% elif url == product %}
-                            <li>
-
-                                <a href="/ru/product/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="/uz/product/"><img src="{% static 'assets/bubly/flags/uzbekistan.png'%}" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="/en/product/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
-                            </li>
-                            {% else %}
+                            {% if url == index %}
                             <li>
 
                                 <a href="/ru/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
@@ -412,6 +359,11 @@
                             <li>
                                 <a href="/en/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
                             </li>
+
+
+                           
+                            
+                           
                             {% endif %}
                         </ul>
                     </div>

@@ -21,13 +21,18 @@ from django.conf.urls.static import static
 from django.conf.urls.i18n import i18n_patterns
 
 
-urlpatterns = i18n_patterns(
-    path('admin/', admin.site.urls),
-    # path('i18n/en/',include("django.conf.urls.i18n")),
-    # path('i18n/uz/',include("django.conf.urls.i18n")),
-    # path('i18n/ru/',include("django.conf.urls.i18n")),
-    path('',include('main.urls'))
-)
+urlpatterns =[
 
+    path("i18n/",include("django.conf.urls.i18n")),
+    
+] 
+
+urlpatterns+=i18n_patterns(
+    path('admin/', admin.site.urls),
+    path('',include('main.urls')),
+    
+
+)
+prefix_default_language = False
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

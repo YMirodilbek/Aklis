@@ -20,9 +20,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = 'django-insecure-p9ibpe)9mlq4)tbbii=5kn^1q2ngr=zp)fx##j#@5rbi))(p&0'
+
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = True
 ALLOWED_HOSTS = ["aklis.uz",'www.aklis.uz','127.0.0.1']
 
 
@@ -115,6 +116,9 @@ LANGUAGES=(
     
 
 )
+
+
+
 
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'uz'
 LOCALE_PATHS= BASE_DIR,'locale'

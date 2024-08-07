@@ -32,93 +32,81 @@ msgstr ""
 
 #: templates/about.html:65
 msgid "Aklis Haqida"
-msgstr ""
+msgstr "About Aklis"
 
 #: templates/about.html:74 templates/base.html:415
 msgid "Bog'lanish"
-msgstr ""
+msgstr "Contact"
 
 #: templates/about.html:100
 msgid "Nima Uchun"
-msgstr ""
+msgstr "Why"
 
 #: templates/about.html:102
 msgid "Ko'plab Insonlar"
-msgstr ""
+msgstr "Many People"
 
 #: templates/about.html:102
 msgid "Bizni Tanlshmoqda"
-msgstr ""
+msgstr "are Choosing Us"
 
 #: templates/about.html:105
 msgid "Bizga Qo'ng'iroq qiling yoki Tashrif Buyuring"
-msgstr ""
+msgstr "Call Us Or Visit"
 
 #: templates/about.html:106
 msgid ""
-"Biz 13 turdagi kukun mahsulotlari ishlab chiqarishga ixtisoslashganmiz, "
-"jumladan:"
-msgstr ""
+"Biz 13 turdagi kukun mahsulotlari ishlab chiqarishga ixtisoslashganmiz, jumladan:"
+msgstr "We specialize in the production of 13 types of powder products, including:"
 
 #: templates/about.html:107
 msgid "Monoksid"
-msgstr ""
+msgstr "Monoksid"
 
 #: templates/about.html:108
 msgid "Tripolifosfat natriy"
-msgstr ""
+msgstr "Sodium tripolyphosphate"
 
 #: templates/about.html:109
 msgid "Fermentlar"
-msgstr ""
+msgstr "Enzymes"
 
 #: templates/about.html:110
 msgid "Aromatik hidlar"
-msgstr ""
+msgstr "Aromatic scents"
 
 #: templates/about.html:112
 msgid "Asosiy xususiyatlari va foydalari"
-msgstr ""
+msgstr "Main features and benefits"
 
 #: templates/about.html:114
-msgid ""
-"Rangni himoya qilish: Turli xil rang-barang kiyimlarni ranglarning "
-"aralashuvidan qo'rqmasdan yuvish. Mahsulotimiz kiyimlaringizning "
-"yorqinligini saqlaydi"
-msgstr ""
+msgid "Rangni himoya qilish: Turli xil rang-barang kiyimlarni ranglarning aralashuvidan qo'rqmasdan yuvish. Mahsulotimiz kiyimlaringizning yorqinligini saqlaydi"
+msgstr "Color protection: Wash different colored clothes without fear of color mixing. Our product preserves the shine of your clothes"
 
 #: templates/about.html:115
-msgid ""
-"Tuklarni olib tashlash: Kiyimlaringizdagi tuklarni samarali olib tashlab, "
-"ularni yangi ko'rinishda saqlaydi"
-msgstr ""
+msgid "Tuklarni olib tashlash: Kiyimlaringizdagi tuklarni samarali olib tashlab, ularni yangi ko'rinishda saqlaydi"
+msgstr "Lint Removal: Effectively removes lint from your clothes and keeps them looking new"
 
 #: templates/about.html:116
-msgid ""
-"Rangni tiklash: Agar kiyimlaringiz rangi yo'qolgan bo'lsa, mahsulotimiz "
-"ularning asl rangini tiklashga yordam beradi"
-msgstr ""
+msgid "Rangni tiklash: Agar kiyimlaringiz rangi yo'qolgan bo'lsa, mahsulotimiz ularning asl rangini tiklashga yordam beradi"
+msgstr "Color Restoration: If your clothes are discolored, our products will help restore their original color"
 
 #: templates/about.html:117
-msgid ""
-"Ko'p maqsadli foydalanish: Gilamlarni yuvishda ham qo'llaniladi, "
-"mahsulotimiz gilamlar tolalarini tiklashga yordam beradi"
-msgstr ""
+msgid "Ko'p maqsadli foydalanish: Gilamlarni yuvishda ham qo'llaniladi,mahsulotimiz gilamlar tolalarini tiklashga yordam beradi"
+msgstr "Multi-purpose use: Also used for washing carpets, our product helps restore carpet fibers"
 
 #: templates/about.html:118
-msgid ""
-"Qulay qadoqlash: Mahsulotimiz zamok bilan yopilgan bo'lib, foydalanishda "
-"qulay va osondir"
-msgstr ""
+msgid "Qulay qadoqlash: Mahsulotimiz zamok bilan yopilgan bo'lib, foydalanishda qulay va osondir"
+msgstr "Convenient packaging: Our product is sealed with a zipper, which is convenient and easy to use"
 
 #: templates/about.html:121 templates/base.html:271 templates/base.html:285
 #: templates/base.html:405
 msgid "Aloqa"
-msgstr ""
+msgstr "Contact"
 
 #: templates/about.html:167
 msgid "Jamoamiz Azolari"
-msgstr ""
+msgstr "Team Memebers"
 
 #: templates/about.html:169
 msgid "Bizning Tajribali Va"
@@ -126,97 +114,93 @@ msgstr ""
 
 #: templates/about.html:169
 msgid "Kreativ Jamoamiz Azolari"
-msgstr ""
+msgstr "Creativ Team Members"
 
 #: templates/base.html:126
 msgid "Tugatish"
-msgstr ""
+msgstr "Finish"
 
 #: templates/base.html:263 templates/base.html:400
 msgid "Asosiy"
-msgstr ""
+msgstr "Main"
 
 #: templates/base.html:266 templates/base.html:403
 msgid "Biz Haqimizda"
-msgstr ""
+msgstr "About Us"
 
 #: templates/base.html:376
 #, python-format
-msgid ""
-"Mahsulotimiz barcha turdagi kir yuvish mashinalari bilan mos keladi va "
-"qo'lda yuvish uchun ham ishlatilishi mumkin. Xavfsizlik 100%% tasdiqlangan, "
-"shuning uchun u tanangizga yoki qo'llaringizga ta'sir qilmaydi va "
-"kasalliklarga olib kelmaydi"
-msgstr ""
+msgid "Mahsulotimiz barcha turdagi kir yuvish mashinalari bilan mos keladi va qo'lda yuvish uchun ham ishlatilishi mumkin. Xavfsizlik 100% tasdiqlangan,shuning uchun u tanangizga yoki qo'llaringizga ta'sir qilmaydi va kasalliklarga olib kelmaydi"
+msgstr "Our product is compatible with all types of washing machines and can also be used for hand washing. 100% safety proven, so it won't affect your body or hands and won't cause diseases"
 
 #: templates/base.html:396
 msgid "Xizmatlar"
-msgstr ""
+msgstr "Services"
 
 #: templates/contact.html:42
 msgid "Axborotlar"
-msgstr ""
+msgstr "Informations"
 
 #: templates/contact.html:44
 msgid "Bizning Zavodimizga Tashrif Buyuring yoki"
-msgstr ""
+msgstr "Visit Our Factory"
 
 #: templates/contact.html:44
 msgid "Biz Bilan Bugun Bog'laning"
-msgstr ""
+msgstr "Contact Us Today"
 
 #: templates/contact.html:54
 msgid "Bizning Manzilimiz"
-msgstr ""
+msgstr "Our Addres"
 
 #: templates/contact.html:67
 msgid "Bizning Pochtamiz"
-msgstr ""
+msgstr "Our Mails"
 
 #: templates/contact.html:81
 msgid "Qo'ng'iroq"
-msgstr ""
+msgstr "Call"
 
 #: templates/contact.html:100
 msgid "Ma'lumotlar"
-msgstr ""
+msgstr "Informations"
 
 #: templates/contact.html:102
 msgid "Bizga Xabar Yuboring "
-msgstr ""
+msgstr " Message Us"
 
 #: templates/contact.html:140
 msgid "Jonatish"
-msgstr ""
+msgstr "Send"
 
 #: templates/index.html:102 templates/index.html:228
 msgid "Bizning Mahsulotlarimiz"
-msgstr ""
+msgstr "Our Products"
 
 #: templates/index.html:104
 msgid "SUPER Aklis: Kafolatlangan sifatli porlash"
-msgstr ""
+msgstr "SUPER Aklis: Guaranteed Quality shine"
 
 #: templates/index.html:124 templates/index.html:151 templates/index.html:177
 #: templates/index.html:203
 msgid "Xarid Qiling"
-msgstr ""
+msgstr "Order Now"
 
 #: templates/index.html:230
 msgid "Bizning Barcha Mahsulotlarimiz"
-msgstr ""
+msgstr "Our All Products"
 
 #: templates/index.html:230
 msgid "Mahsulotlar"
-msgstr ""
+msgstr "Products"
 
 #: templates/index.html:230
 msgid "Bo'limida"
-msgstr ""
+msgstr "Department"
 
 #: templates/index.html:248 templates/product.html:98
 msgid "Buyurtma Berish"
-msgstr ""
+msgstr "Order Now"
 
 #: venv/lib/python3.12/site-packages/django/contrib/messages/apps.py:16
 msgid "Messages"
