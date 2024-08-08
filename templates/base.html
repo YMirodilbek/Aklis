@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Hoppex - Responsive HTML 5 Template - shared on themelock.com</title>
+    <title>Aklis - Bubly</title>
 
     <!-- responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -185,7 +185,7 @@
 
                                         </div>
                                         <div class="text">
-                                            <h6>Andijon Viloyat , Paxtaobod Tumani,Madaniyat QFY,DurDiyor MFY</h6>
+                                            <h6>{% trans "Andijon Viloyat Paxtaobod Tumani Madaniyat QFY DurDiyor MFY"%}</h6>
                                         </div>
                                     </li>
                                     <li>
@@ -348,24 +348,38 @@
                     <!--Social Links-->
                     <div class="social-links">
                         <ul class="clearfix">
-                            {% if url == index %}
-                            <li>
-
-                                <a href="/ru/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="/uz/"><img src="{% static 'assets/bubly/flags/uzbekistan.png'%}" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="/en/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
-                            </li>
-
-
-                           
-                            
-                           
-                            {% endif %}
-                        </ul>
+                            {% if url == about%}
+                               <li>
+                                   <a href="/ru/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
+                               </li>
+                               <li>
+                                   <a href="/uz/"><img src="{% static 'assets/bubly/flags/uzbekistan.png'%}" alt=""></a>
+                               </li>
+                               <li>
+                                   <a href="/en/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
+                               </li>
+                               {% elif url == contact%}
+                               <li>
+                                   <a href="/ru/about/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
+                               </li>
+                               <li>
+                                   <a href="/uz/about/"><img src="{% static 'assets/bubly/flags/uzbekistan.png'%}" alt=""></a>
+                               </li>
+                               <li>
+                                   <a href="/en/about/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
+                               </li>
+                               {% elif url == index%}
+                               <li>
+                                   <a href="/ru/contact/"><img src="{% static 'assets/bubly/flags/russia.png'%}" alt=""></a>
+                               </li>
+                               <li>
+                                   <a href="/uz/contact/"><img src="{% static 'assets/bubly/flags/uzbekistan.png'%}" alt=""></a>
+                               </li>
+                               <li>
+                                   <a href="/en/contact/"><img src="{% static 'assets/bubly/flags/united-kingdom.png'%}" alt=""></a>
+                               </li>
+                           {% endif %}
+                           </ul>
                     </div>
                 </nav>
             </div>
@@ -451,7 +465,7 @@
 
                                         </div>
                                         <div class="text">
-                                            <p>Andijon Viloyat , Paxtaobod Tumani,<br>Madaniyat QFY,DurDiyor MFY</p>
+                                            <p>{% trans "Andijon Viloyat Paxtaobod Tumani"%},<br>{% trans "Madaniyat QFY,DurDiyor MFY"%}</p>
                                         </div>
                                     </div>
                                 </li>
@@ -462,7 +476,7 @@
 
                                         </div>
                                         <div class="text">
-                                            <p>Telefon: <a href="tel:998971697799">+998 97-169-77-99</a></p>
+                                            <p>{% trans "Telefon"%}: <a href="tel:998971697799">+998 97-169-77-99</a></p>
                                         </div>
                                     </div>
                                 </li>

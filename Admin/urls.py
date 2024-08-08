@@ -28,7 +28,7 @@ urlpatterns =[
 ] 
 
 urlpatterns+=i18n_patterns(
-    path('admin/', admin.site.urls),
+    path('nano/', admin.site.urls),
     path('',include('main.urls')),
     
 

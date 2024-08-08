@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-07 06:22+0500\n"
+"POT-Creation-Date: 2024-08-08 07:10+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgstr ""
 msgid "Aklis Haqida"
 msgstr "About Aklis"
 
-#: templates/about.html:74 templates/base.html:415
+#: templates/about.html:74 templates/base.html:457
 msgid "Bog'lanish"
 msgstr "Contact"
 
@@ -56,8 +56,10 @@ msgstr "Call Us Or Visit"
 
 #: templates/about.html:106
 msgid ""
-"Biz 13 turdagi kukun mahsulotlari ishlab chiqarishga ixtisoslashganmiz, jumladan:"
-msgstr "We specialize in the production of 13 types of powder products, including:"
+"Biz 13 turdagi kukun mahsulotlari ishlab chiqarishga ixtisoslashganmiz, "
+"jumladan:"
+msgstr ""
+"We specialize in the production of 13 types of powder products, including:"
 
 #: templates/about.html:107
 msgid "Monoksid"
@@ -80,27 +82,52 @@ msgid "Asosiy xususiyatlari va foydalari"
 msgstr "Main features and benefits"
 
 #: templates/about.html:114
-msgid "Rangni himoya qilish: Turli xil rang-barang kiyimlarni ranglarning aralashuvidan qo'rqmasdan yuvish. Mahsulotimiz kiyimlaringizning yorqinligini saqlaydi"
-msgstr "Color protection: Wash different colored clothes without fear of color mixing. Our product preserves the shine of your clothes"
+msgid ""
+"Rangni himoya qilish: Turli xil rang-barang kiyimlarni ranglarning "
+"aralashuvidan qo'rqmasdan yuvish. Mahsulotimiz kiyimlaringizning "
+"yorqinligini saqlaydi"
+msgstr ""
+"Color protection: Wash different colored clothes without fear of color "
+"mixing. Our product preserves the shine of your clothes"
 
 #: templates/about.html:115
-msgid "Tuklarni olib tashlash: Kiyimlaringizdagi tuklarni samarali olib tashlab, ularni yangi ko'rinishda saqlaydi"
-msgstr "Lint Removal: Effectively removes lint from your clothes and keeps them looking new"
+msgid ""
+"Tuklarni olib tashlash: Kiyimlaringizdagi tuklarni samarali olib tashlab, "
+"ularni yangi ko'rinishda saqlaydi"
+msgstr ""
+"Lint Removal: Effectively removes lint from your clothes and keeps them "
+"looking new"
 
 #: templates/about.html:116
-msgid "Rangni tiklash: Agar kiyimlaringiz rangi yo'qolgan bo'lsa, mahsulotimiz ularning asl rangini tiklashga yordam beradi"
-msgstr "Color Restoration: If your clothes are discolored, our products will help restore their original color"
+msgid ""
+"Rangni tiklash: Agar kiyimlaringiz rangi yo'qolgan bo'lsa, mahsulotimiz "
+"ularning asl rangini tiklashga yordam beradi"
+msgstr ""
+"Color Restoration: If your clothes are discolored, our products will help "
+"restore their original color"
 
 #: templates/about.html:117
-msgid "Ko'p maqsadli foydalanish: Gilamlarni yuvishda ham qo'llaniladi,mahsulotimiz gilamlar tolalarini tiklashga yordam beradi"
-msgstr "Multi-purpose use: Also used for washing carpets, our product helps restore carpet fibers"
+#, fuzzy
+#| msgid ""
+#| "Ko'p maqsadli foydalanish: Gilamlarni yuvishda ham qo'llaniladi,"
+#| "mahsulotimiz gilamlar tolalarini tiklashga yordam beradi"
+msgid ""
+"Ko'p maqsadli foydalanish: Gilamlarni yuvishda ham qo'llaniladi, "
+"mahsulotimiz gilamlar tolalarini tiklashga yordam beradi"
+msgstr ""
+"Multi-purpose use: Also used for washing carpets, our product helps restore "
+"carpet fibers"
 
 #: templates/about.html:118
-msgid "Qulay qadoqlash: Mahsulotimiz zamok bilan yopilgan bo'lib, foydalanishda qulay va osondir"
-msgstr "Convenient packaging: Our product is sealed with a zipper, which is convenient and easy to use"
+msgid ""
+"Qulay qadoqlash: Mahsulotimiz zamok bilan yopilgan bo'lib, foydalanishda "
+"qulay va osondir"
+msgstr ""
+"Convenient packaging: Our product is sealed with a zipper, which is "
+"convenient and easy to use"
 
-#: templates/about.html:121 templates/base.html:271 templates/base.html:285
-#: templates/base.html:405
+#: templates/about.html:121 templates/base.html:292 templates/base.html:306
+#: templates/base.html:447
 msgid "Aloqa"
 msgstr "Contact"
 
@@ -120,22 +147,50 @@ msgstr "Creativ Team Members"
 msgid "Tugatish"
 msgstr "Finish"
 
-#: templates/base.html:263 templates/base.html:400
+#: templates/base.html:188
+msgid "Andijon Viloyat Paxtaobod Tumani Madaniyat QFY DurDiyor MFY"
+msgstr "Andizhan State Pakhtaobod District Madaniyat Village DurDiyor "
+
+#: templates/base.html:284 templates/base.html:442
 msgid "Asosiy"
 msgstr "Main"
 
-#: templates/base.html:266 templates/base.html:403
+#: templates/base.html:287 templates/base.html:445
 msgid "Biz Haqimizda"
 msgstr "About Us"
 
-#: templates/base.html:376
-#, python-format
-msgid "Mahsulotimiz barcha turdagi kir yuvish mashinalari bilan mos keladi va qo'lda yuvish uchun ham ishlatilishi mumkin. Xavfsizlik 100% tasdiqlangan,shuning uchun u tanangizga yoki qo'llaringizga ta'sir qilmaydi va kasalliklarga olib kelmaydi"
-msgstr "Our product is compatible with all types of washing machines and can also be used for hand washing. 100% safety proven, so it won't affect your body or hands and won't cause diseases"
+#: templates/base.html:418
+#, fuzzy, python-format
+#| msgid ""
+#| "Mahsulotimiz barcha turdagi kir yuvish mashinalari bilan mos keladi va "
+#| "qo'lda yuvish uchun ham ishlatilishi mumkin. Xavfsizlik 100% tasdiqlangan,"
+#| "shuning uchun u tanangizga yoki qo'llaringizga ta'sir qilmaydi va "
+#| "kasalliklarga olib kelmaydi"
+msgid ""
+"Mahsulotimiz barcha turdagi kir yuvish mashinalari bilan mos keladi va "
+"qo'lda yuvish uchun ham ishlatilishi mumkin. Xavfsizlik 100%% tasdiqlangan, "
+"shuning uchun u tanangizga yoki qo'llaringizga ta'sir qilmaydi va "
+"kasalliklarga olib kelmaydi"
+msgstr ""
+"Our product is compatible with all types of washing machines and can also be "
+"used for hand washing. 100% safety proven, so it won't affect your body or "
+"hands and won't cause diseases"
 
-#: templates/base.html:396
+#: templates/base.html:438
 msgid "Xizmatlar"
 msgstr "Services"
+
+#: templates/base.html:468
+msgid "Andijon Viloyat Paxtaobod Tumani"
+msgstr "Andijzham State Pakhtaobod District"
+
+#: templates/base.html:468
+msgid "Madaniyat QFY,DurDiyor MFY"
+msgstr "Madaniyat Village Durdiyor "
+
+#: templates/base.html:479
+msgid "Telefon"
+msgstr "Phone"
 
 #: templates/contact.html:42
 msgid "Axborotlar"
@@ -172,6 +227,18 @@ msgstr " Message Us"
 #: templates/contact.html:140
 msgid "Jonatish"
 msgstr "Send"
+
+#: templates/contact.html:162
+msgid "Yo'nalish Olish Uchun"
+msgstr "To Get A Direction"
+
+#: templates/contact.html:162
+msgid "Shuni"
+msgstr "That"
+
+#: templates/contact.html:162
+msgid "Ustiga Bosing"
+msgstr "Click It"
 
 #: templates/index.html:102 templates/index.html:228
 msgid "Bizning Mahsulotlarimiz"

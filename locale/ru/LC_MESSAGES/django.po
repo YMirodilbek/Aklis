@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-07 06:23+0500\n"
+"POT-Creation-Date: 2024-08-08 07:09+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgstr ""
 msgid "Aklis Haqida"
 msgstr "Об Аклисе"
 
-#: templates/about.html:74 templates/base.html:415
+#: templates/about.html:74 templates/base.html:457
 msgid "Bog'lanish"
 msgstr "Связь"
 
@@ -57,7 +57,13 @@ msgid "Bizga Qo'ng'iroq qiling yoki Tashrif Buyuring"
 msgstr "Позвоните нам или запишитесь на визит"
 
 #: templates/about.html:106
-msgid "Biz 13 turdagi kukun mahsulotlari ishlab chiqarishga ixtisoslashganmiz,jumladan:"
+#, fuzzy
+#| msgid ""
+#| "Biz 13 turdagi kukun mahsulotlari ishlab chiqarishga ixtisoslashganmiz,"
+#| "jumladan:"
+msgid ""
+"Biz 13 turdagi kukun mahsulotlari ishlab chiqarishga ixtisoslashganmiz, "
+"jumladan:"
 msgstr "Мы специализируемся на производстве 13 видов порошковой продукции, в том числе"
 
 #: templates/about.html:107
@@ -81,27 +87,52 @@ msgid "Asosiy xususiyatlari va foydalari"
 msgstr "Ключевые особенности и преимущества"
 
 #: templates/about.html:114
-msgid "Rangni himoya qilish: Turli xil rang-barang kiyimlarni ranglarning aralashuvidan qo'rqmasdan yuvish. Mahsulotimiz kiyimlaringizning yorqinligini saqlaydi"
-msgstr "Защита цвета: стирайте одежду разных цветов, не опасаясь смешивания цветов. Наш продукт сохранит блеск вашей одежды"
+msgid ""
+"Rangni himoya qilish: Turli xil rang-barang kiyimlarni ranglarning "
+"aralashuvidan qo'rqmasdan yuvish. Mahsulotimiz kiyimlaringizning "
+"yorqinligini saqlaydi"
+msgstr ""
+"Защита цвета: стирайте одежду разных цветов, не опасаясь смешивания цветов. "
+"Наш продукт сохранит блеск вашей одежды"
 
 #: templates/about.html:115
-msgid "Tuklarni olib tashlash: Kiyimlaringizdagi tuklarni samarali olib tashlab, ularni yangi ko'rinishda saqlaydi"
-msgstr "Удаление ворса: эффективно удаляет ворс с вашей одежды и сохраняет ее новый вид."
+msgid ""
+"Tuklarni olib tashlash: Kiyimlaringizdagi tuklarni samarali olib tashlab, "
+"ularni yangi ko'rinishda saqlaydi"
+msgstr ""
+"Удаление ворса: эффективно удаляет ворс с вашей одежды и сохраняет ее новый "
+"вид."
 
 #: templates/about.html:116
-msgid "Rangni tiklash: Agar kiyimlaringiz rangi yo'qolgan bo'lsa, mahsulotimiz ularning asl rangini tiklashga yordam beradi"
-msgstr "Восстановление цвета: Если ваша одежда обесцветилась, наша продукция поможет восстановить ее первоначальный цвет."
+msgid ""
+"Rangni tiklash: Agar kiyimlaringiz rangi yo'qolgan bo'lsa, mahsulotimiz "
+"ularning asl rangini tiklashga yordam beradi"
+msgstr ""
+"Восстановление цвета: Если ваша одежда обесцветилась, наша продукция поможет "
+"восстановить ее первоначальный цвет."
 
 #: templates/about.html:117
-msgid "Ko'p maqsadli foydalanish: Gilamlarni yuvishda ham qo'llaniladi,mahsulotimiz gilamlar tolalarini tiklashga yordam beradi"
-msgstr "Многоцелевое использование: наш продукт также используется при чистке ковров и помогает восстановить волокна ковра."
+#, fuzzy
+#| msgid ""
+#| "Ko'p maqsadli foydalanish: Gilamlarni yuvishda ham qo'llaniladi,"
+#| "mahsulotimiz gilamlar tolalarini tiklashga yordam beradi"
+msgid ""
+"Ko'p maqsadli foydalanish: Gilamlarni yuvishda ham qo'llaniladi, "
+"mahsulotimiz gilamlar tolalarini tiklashga yordam beradi"
+msgstr ""
+"Многоцелевое использование: наш продукт также используется при чистке ковров "
+"и помогает восстановить волокна ковра."
 
 #: templates/about.html:118
-msgid "Qulay qadoqlash: Mahsulotimiz zamok bilan yopilgan bo'lib, foydalanishda qulay va osondir"
-msgstr "Удобная упаковка: наш товар застегивается на молнию, что удобно и просто в использовании."
+msgid ""
+"Qulay qadoqlash: Mahsulotimiz zamok bilan yopilgan bo'lib, foydalanishda "
+"qulay va osondir"
+msgstr ""
+"Удобная упаковка: наш товар застегивается на молнию, что удобно и просто в "
+"использовании."
 
-#: templates/about.html:121 templates/base.html:271 templates/base.html:285
-#: templates/base.html:405
+#: templates/about.html:121 templates/base.html:292 templates/base.html:306
+#: templates/base.html:447
 msgid "Aloqa"
 msgstr "Коммуникация"
 
@@ -115,28 +146,56 @@ msgstr "Наши опытные и"
 
 #: templates/about.html:169
 msgid "Kreativ Jamoamiz Azolari"
-msgstr "Члены нашей творческой команды"
+msgstr "нашей творческой команды"
 
 #: templates/base.html:126
 msgid "Tugatish"
 msgstr "заканчивать"
 
-#: templates/base.html:263 templates/base.html:400
-msgid "Asosiy"
-msgstr "Основной"
+#: templates/base.html:188
+msgid "Andijon Viloyat Paxtaobod Tumani Madaniyat QFY DurDiyor MFY"
+msgstr "Провинция Андиджон Пахтаабадский район Культура QFY DurDiyor MFY"
 
-#: templates/base.html:266 templates/base.html:403
+#: templates/base.html:284 templates/base.html:442
+msgid "Asosiy"
+msgstr "главный"
+
+#: templates/base.html:287 templates/base.html:445
 msgid "Biz Haqimizda"
 msgstr "О нас"
 
-#: templates/base.html:376
-#, python-format
-msgid "Mahsulotimiz barcha turdagi kir yuvish mashinalari bilan mos keladi va qo'lda yuvish uchun ham ishlatilishi mumkin. Xavfsizlik 100%% tasdiqlangan,shuning uchun u tanangizga yoki qo'llaringizga ta'sir qilmaydi va kasalliklarga olib kelmaydi"
-msgstr "Наш продукт совместим со всеми типами стиральных машин, а также может использоваться для ручной стирки. Подтверждена 100% безопасность, поэтому он не повлияет на ваше тело или руки и не вызовет заболеваний."
+#: templates/base.html:418
+#, fuzzy, python-format
+#| msgid ""
+#| "Mahsulotimiz barcha turdagi kir yuvish mashinalari bilan mos keladi va "
+#| "qo'lda yuvish uchun ham ishlatilishi mumkin. Xavfsizlik 100%% "
+#| "tasdiqlangan,shuning uchun u tanangizga yoki qo'llaringizga ta'sir "
+#| "qilmaydi va kasalliklarga olib kelmaydi"
+msgid ""
+"Mahsulotimiz barcha turdagi kir yuvish mashinalari bilan mos keladi va "
+"qo'lda yuvish uchun ham ishlatilishi mumkin. Xavfsizlik 100%% tasdiqlangan, "
+"shuning uchun u tanangizga yoki qo'llaringizga ta'sir qilmaydi va "
+"kasalliklarga olib kelmaydi"
+msgstr ""
+"Наш продукт совместим со всеми типами стиральных машин а также может "
+"использоваться для ручной стирки. Подтверждена 100% безопасност поэтому он "
+"не повлияет на ваше тело или руки и не вызовет заболеваний."
 
-#: templates/base.html:396
+#: templates/base.html:438
 msgid "Xizmatlar"
 msgstr "Услуги"
+
+#: templates/base.html:468
+msgid "Andijon Viloyat Paxtaobod Tumani"
+msgstr "Провинция Андиджон Пахтаабадский район"
+
+#: templates/base.html:468
+msgid "Madaniyat QFY,DurDiyor MFY"
+msgstr "район маданият"
+
+#: templates/base.html:479
+msgid "Telefon"
+msgstr "телефон"
 
 #: templates/contact.html:42
 msgid "Axborotlar"
@@ -173,6 +232,18 @@ msgstr "Отправьте нам сообщение"
 #: templates/contact.html:140
 msgid "Jonatish"
 msgstr "Джонатан"
+
+#: templates/contact.html:162
+msgid "Yo'nalish Olish Uchun"
+msgstr "Чтобы проложить маршрут"
+
+#: templates/contact.html:162
+msgid "Shuni"
+msgstr "Вот и все"
+
+#: templates/contact.html:162
+msgid "Ustiga Bosing"
+msgstr "нажимать"
 
 #: templates/index.html:102 templates/index.html:228
 msgid "Bizning Mahsulotlarimiz"
